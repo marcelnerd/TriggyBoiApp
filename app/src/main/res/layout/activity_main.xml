@@ -4,97 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cameron.triggyboi.MainActivity">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/solveButton"
+    <TextView
+        android:id="@+id/introText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="152dp"
-        android:layout_marginStart="132dp"
-        android:text="Solve That Shit"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/resetButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="516dp"
-        android:text="Reset"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/detaView"
-        android:layout_width="118dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="188dp"
-        android:layout_marginTop="292dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Deta Angle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/bView"
-        android:layout_width="100dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="232dp"
-        android:layout_marginTop="344dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Side B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/hypotView"
-        android:layout_width="188dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="144dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Hypotenuse Length"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="49dp"
+        android:text="What kind of problem do you want to solve?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/aView"
-        android:layout_width="165dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="416dp"
-        android:layout_marginStart="256dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Side A"
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="389dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:text="Right Triangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/thetaView"
-        android:layout_width="165dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="92dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Theta Angle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="396dp"
-        android:layout_height="380dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
-
+    <Button
+        android:id="@+id/nonRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="389dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Non-Right Triangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rightButton" />
 </android.support.constraint.ConstraintLayout>
