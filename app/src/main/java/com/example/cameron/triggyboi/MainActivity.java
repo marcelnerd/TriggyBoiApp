@@ -1,5 +1,5 @@
 package com.example.cameron.triggyboi;
-// test comment
+// test comment   gg
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
