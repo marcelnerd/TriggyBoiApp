@@ -113,6 +113,12 @@ public class NonRightTrigEqs {
 
     void calcAngleA() {
         if(!angleASolved) {
+            if(angleBSolved && angleCSolved) {
+                angleA = 180 - (angleB + angleC);
+                angleASolved = true;
+                triangleChanged = true;
+                return;
+            }
             if(angleBSolved && sideASolved && sideBSolved) {
                 angleA = Math.toDegrees(Math.asin((Math.sin(Math.toRadians(angleB)) * sideA) / sideB));
                 angleASolved = true;
@@ -136,6 +142,12 @@ public class NonRightTrigEqs {
 
     void calcAngleB() {
         if(!angleBSolved) {
+            if(angleASolved && angleCSolved) {
+                angleB = 180 - (angleA + angleC);
+                angleBSolved = true;
+                triangleChanged = true;
+                return;
+            }
             if(angleASolved && sideASolved && sideBSolved) {
                 angleB = Math.toDegrees(Math.asin((Math.sin(Math.toRadians(angleA)) * sideB) / sideA));
                 angleBSolved = true;
@@ -161,6 +173,12 @@ public class NonRightTrigEqs {
     void calcAngleC() {
 
         if(!angleCSolved) {
+            if(angleASolved && angleBSolved) {
+                angleC = 180 - (angleA + angleB);
+                angleCSolved = true;
+                triangleChanged = true;
+                return;
+            }
             if(angleASolved && sideASolved && sideCSolved) {
                 angleC = Math.toDegrees(Math.asin((Math.sin(Math.toRadians(angleA)) * sideC) / sideA));
                 angleCSolved = true;

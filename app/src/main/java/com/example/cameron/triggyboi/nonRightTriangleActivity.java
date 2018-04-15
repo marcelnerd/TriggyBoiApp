@@ -88,12 +88,18 @@ public class nonRightTriangleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tigger.setVars(0, 0, 0, 0, 0, 0);
-                setTextValues();
+                sideAText.setText("");
+                angleAText.setText("");
+                sideBText.setText("");
+                angleBText.setText("");
+                sideCText.setText("");
+                angleCText.setText("");
             }
         });
     }
 
     void setTextValues() {
+
         sideAText.setText(Double.toString(tigger.getSideA()));
         angleAText.setText(Double.toString(tigger.getAngleA()));
         sideBText.setText(Double.toString(tigger.getSideB()));

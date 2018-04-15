@@ -73,7 +73,11 @@ public class RightTriangleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 trigy.setVars(0, 0, 0, 0, 0);
-                setTextValues();
+                hypotText.setText("");
+                aText.setText("");
+                bText.setText("");
+                thetaText.setText("");
+                detaText.setText("");
             }
         });
     }
@@ -81,6 +85,7 @@ public class RightTriangleActivity extends AppCompatActivity {
 
 
     public void setTextValues() {
+
         hypotText.setText(Double.toString(trigy.getHypot()));
         aText.setText(Double.toString(trigy.getLegA()));
         bText.setText(Double.toString(trigy.getLegB()));
