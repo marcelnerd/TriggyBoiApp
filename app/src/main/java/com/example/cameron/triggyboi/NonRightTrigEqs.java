@@ -9,6 +9,7 @@ public class NonRightTrigEqs {
         sideA = sA;
         angleA = aA;
         sideB = sB;
+
         angleB = aB;
         sideC = sC;
         angleC = aC;
@@ -24,7 +25,7 @@ public class NonRightTrigEqs {
     }
 
 
-    public void solveTriange() {
+    public void solveTriangle() {
         while(triangleChanged) {
             triangleChanged = false;
             calcSideA();
@@ -181,5 +182,25 @@ public class NonRightTrigEqs {
         }
     }
 
+    public double getSideC() {
+        return sideC;
+    }
 
+    public double getAngleA() {
+        return angleA;
+    }
+
+    public double getAngleB() {
+        return angleB;
+    }
+
+    public double getAngleC() {
+        return angleC;
+    }
+    public double getSideA() {
+        return sideA;
+    }
+    public double getSideB() {
+        return sideB;
+    }
 }

@@ -7,7 +7,7 @@
     tools:context=".nonRightTriangleActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/obtuseTriangleImage"
         android:layout_width="320dp"
         android:layout_height="232dp"
         android:layout_marginLeft="16dp"
@@ -16,4 +16,103 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/obtuse_triangle" />
+
+    <EditText
+        android:id="@+id/angleAText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Angle A"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/obtuseTriangleImage"
+        app:layout_constraintTop_toTopOf="@+id/obtuseTriangleImage" />
+
+    <EditText
+        android:id="@+id/sideAText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:ems="10"
+        android:hint="Side A"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/obtuseTriangleImage"
+        app:layout_constraintStart_toStartOf="@+id/obtuseTriangleImage" />
+
+    <EditText
+        android:id="@+id/angleBText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:ems="10"
+        android:hint="Angle B"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/sideAText"
+        app:layout_constraintEnd_toEndOf="@+id/obtuseTriangleImage" />
+
+    <EditText
+        android:id="@+id/sideBText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginStart="224dp"
+        android:ems="10"
+        android:hint="Side B"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/sideAText"
+        app:layout_constraintStart_toStartOf="@+id/obtuseTriangleImage" />
+
+    <EditText
+        android:id="@+id/angleCText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginStart="212dp"
+        android:ems="10"
+        android:hint="Angle C"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/sideAText"
+        app:layout_constraintStart_toStartOf="@+id/obtuseTriangleImage" />
+
+    <EditText
+        android:id="@+id/sideCText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Side C"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/obtuseTriangleImage"
+        app:layout_constraintTop_toTopOf="@+id/obtuseTriangleImage" />
+
+    <Button
+        android:id="@+id/solveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Solve That Shit"
+        app:layout_constraintStart_toStartOf="@+id/obtuseTriangleImage"
+        app:layout_constraintTop_toBottomOf="@+id/sideAText" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:text="Reset"
+        app:layout_constraintBaseline_toBaselineOf="@+id/solveButton"
+        app:layout_constraintStart_toEndOf="@+id/solveButton" />
+
 </android.support.constraint.ConstraintLayout>
