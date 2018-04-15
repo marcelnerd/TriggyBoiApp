@@ -10,7 +10,7 @@ public class RightTriangleActivity extends AppCompatActivity {
 
     Button solveButton, resetButton;
     EditText hypotText, aText, bText, thetaText, detaText;
-    TrigEqs trigy = new TrigEqs();
+    RightTrigEqs trigy = new RightTrigEqs();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,7 +2,7 @@ package com.example.cameron.triggyboi;
 
 import android.util.Log;
 
-public class TrigEqs {
+public class RightTrigEqs {
 
     private double theta;
     private double deta;
