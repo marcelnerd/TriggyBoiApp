@@ -1,6 +1,6 @@
 # TriggyBoiApp
 
-Author and Creator: Damien Q
+Author and Creator: Damien Q 
 This Android app is a trigonometry helper. Given parts of a triangle (right or non-right), it can solve for all the other parts possible.
 
 Anyone is free to take this code and improve it, mess around with it, or sell it if you want.
