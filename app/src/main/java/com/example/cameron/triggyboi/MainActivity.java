@@ -1,3 +1,10 @@
+/*
+Author and Creator: Damien Q
+This app is a trigonometry helper. Given parts of a triangle (right or non-right), it can solve for all the other parts possible
+
+
+ */
+
 package com.example.cameron.triggyboi;
 
 import android.content.Intent;
@@ -8,7 +15,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button rightButton, nonRightButton;
+    Button rightButton, nonRightButton; // The opening screen simply allows the user to choose between solving a right or non-right triange.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

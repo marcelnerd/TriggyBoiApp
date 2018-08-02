@@ -22,20 +22,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="389dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginStart="57dp"
+        android:layout_marginTop="8dp"
         android:text="Right Triangle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/introText"
+        tools:layout_editor_absoluteX="57dp" />
 
     <Button
         android:id="@+id/nonRightButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="389dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Non-Right Triangle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rightButton" />
+        app:layout_constraintTop_toBottomOf="@+id/introText"
+        tools:layout_editor_absoluteX="207dp" />
+
 </android.support.constraint.ConstraintLayout>
